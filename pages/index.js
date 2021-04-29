@@ -21,7 +21,7 @@ export default function Home(props) {
 
   return (
 
-    <div>
+    <div className={styles.containerfluid + " " + styles.background}>
       <Head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -31,13 +31,24 @@ export default function Home(props) {
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
       </Head>
 
-      <video playsinline autoplay muted loop className={styles.vid}>
-        <source src="/black.mp4" type="video/mp4" />
-      </video>
+      <nav className="navbar navbar-dark">
+        <div className="container-fluid">
+          <h1 className={styles.toph}><u>Cryptozz</u></h1>
+        </div>
+      </nav>
 
+      <img src="/btc.png" height="50px" width="50px" className={styles.cube} />
+
+      <div className={styles.cube}></div>
+      <img src="/xrp.png" height="50px" width="50px" className={styles.cube} />
+      <img src="/ltc.png" height="50px" width="50px" className={styles.cube} />
+      <img src="/ada.png" height="50px" width="50px" className={styles.cube} />
+      <img src="/bnb.png" height="50px" width="50px" className={styles.cube} />
+      <img src="/eth.png" height="50px" width="50px" className={styles.cube} />
+      <img src="/link.png" height="50px" width="50px" className={styles.cube} />
 
       <section className={styles.glass}>
-        <div className="container-sm">
+        <div className="container-sm my-5">
           <table className='table table-dark table-striped table-sm'>
             <thead>
               <tr>
