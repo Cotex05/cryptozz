@@ -29,26 +29,44 @@ export default function Home(props) {
         <title>Cryptozz</title>
         <link rel="icon" href="/favicon.ico" />
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet" />
       </Head>
 
-      <nav className="navbar navbar-dark">
+      <nav className={styles.navbg + " navbar navbar-expand-md navbar-dark sticky-top"}>
         <div className="container-fluid">
-          <h1 className={styles.toph}><u>Cryptozz</u></h1>
+          <h1 className={styles.headerFont + " mx-3"} href="/">Cryptozz</h1>
+          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse" id="navbarCollapse">
+            <ul className="navbar-nav me-auto mb-2 mb-md-0">
+              <li className="nav-item mx-4 my-3">
+                <a className="btn btn-primary" type="button" href="https://www.tradingview.com/chart/" target="_blank">Trading View</a>
+              </li>
+              <li className="nav-item mx-4 my-3">
+                <a className="btn btn-dark" type="button" href="https://github.com/Cotex05/cryptozz" target="_blank">Github</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
 
-      <img src="/btc.png" height="50px" width="50px" className={styles.cube} />
+      <img src="/btc.png" height="20px" width="20px" className={styles.bubble + " " + styles.x1} />
 
-      <div className={styles.cube}></div>
-      <img src="/xrp.png" height="50px" width="50px" className={styles.cube} />
-      <img src="/ltc.png" height="50px" width="50px" className={styles.cube} />
-      <img src="/ada.png" height="50px" width="50px" className={styles.cube} />
-      <img src="/bnb.png" height="50px" width="50px" className={styles.cube} />
-      <img src="/eth.png" height="50px" width="50px" className={styles.cube} />
-      <img src="/link.png" height="50px" width="50px" className={styles.cube} />
+      <img src="/doge.png" height="20px" width="20px" className={styles.bubble + " " + styles.x2} />
+      <img src="/xrp.png" height="20px" width="20px" className={styles.bubble + " " + styles.x3} />
+      <img src="/ltc.png" height="20px" width="20px" className={styles.bubble + " " + styles.x4} />
+      <img src="/ada.png" height="20px" width="20px" className={styles.bubble + " " + styles.x5} />
+      <img src="/bnb.png" height="20px" width="20px" className={styles.bubble + " " + styles.x6} />
+      <img src="/eth.png" height="20px" width="20px" className={styles.bubble + " " + styles.x7} />
+      <img src="/link.png" height="20px" width="20px" className={styles.bubble + " " + styles.x8} />
+      <img src="/btt.png" height="20px" width="20px" className={styles.bubble + " " + styles.x9} />
+      <img src="/usd.png" height="20px" width="20px" className={styles.bubble + " " + styles.x10} />
 
       <section className={styles.glass}>
-        <div className="container-sm my-5">
+        <div className="container-sm my-1">
           <table className='table table-dark table-striped table-sm'>
             <thead>
               <tr>
@@ -80,6 +98,11 @@ export default function Home(props) {
           </table>
         </div>
       </section>
+
+      <footer className="my-5 pt-5 text-center text-large">
+        <p className={styles.footertext + " mb-1"}>Developed 👨‍💻 by cotex</p>
+      </footer>
+
     </div>
 
   )
